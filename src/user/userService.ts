@@ -36,7 +36,7 @@ function setCurrentToken(token: string) {
   axios.defaults.headers.common.Authorization = "bearer " + token
 }
 
-function getCurrentUser(): User | undefined {
+export function getCurrentUser(): User | undefined {
   return localStorage.getItem("user") as unknown as User
 }
 

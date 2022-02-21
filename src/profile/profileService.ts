@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios"
 import { environment } from "../app/environment/environment"
 import { logout } from "../user/userService"
 
-interface Profile {
+export interface Profile {
   name: string
   phone: string
   email: string
